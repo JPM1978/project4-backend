@@ -22,8 +22,6 @@ from decks.views  import DeckViewSet
 router = routers.DefaultRouter()
 router.register(r'decks', DeckViewSet)
 
-print (router.urls)
-
 urlpatterns = [
     path('', include(router.urls)),
     path('admin/', admin.site.urls),
